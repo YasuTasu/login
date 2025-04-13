@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        
+        <!-- ユーザー用ログインフォーム -->
+        <div class="login-box">
+            <h2>ユーザー用ログイン</h2>
+            <input type="text" id="user_user_id" placeholder="ユーザーID" autocomplete="username">
+            <input type="password" id="user_password" placeholder="パスワード" autocomplete="current-password">
+            <button onclick="login('user')">ログイン</button>
+            <p id="user-error-message" class="error-message"></p>
+        </div>
+
+        <!-- 管理者用ログインフォーム -->
+        <div class="login-box">
+            <h2>管理者用ログイン</h2>
+            <input type="text" id="admin_user_id" placeholder="管理者ID" autocomplete="username">
+            <input type="password" id="admin_password" placeholder="パスワード" autocomplete="current-password">
+            <button onclick="login('admin')">ログイン</button>
+            <p id="admin-error-message" class="error-message"></p>
+        </div>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

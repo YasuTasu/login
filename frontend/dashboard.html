@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>ダッシュボード</h2>
+        <p id="welcome-message"></p>
+        <button onclick="logout()">ログアウト</button>
+
+        <!-- 一般ユーザー向けの表示 -->
+        <div id="user-section" style="display: none;">
+            <h3>一般ユーザー向けコンテンツ</h3>
+            <p>これは一般ユーザーが閲覧できるページです。</p>
+        </div>
+
+        <!-- 管理者向けの表示 -->
+        <div id="admin-section" style="display: none;">
+            <h3>管理者向けコンテンツ</h3>
+            <p>管理者専用のページです。</p>
+            <ul>
+                <li>ユーザー管理</li>
+                <li>システム設定</li>
+                <li>ログの監視</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

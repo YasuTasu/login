@@ -1,0 +1,139 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ログインフォームのコンテナ */
+.login-container {
+    background: white;
+    padding: 20px;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 各ログインフォーム */
+.login-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* タイトル */
+.login-box h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* 入力フィールド */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+/* フォーカス時のスタイル */
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+    background: #fff;
+}
+
+/* ログインボタン */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ダッシュボードコンテナ */
+.dashboard-container {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* ユーザーダッシュボードのボタン */
+.dashboard-button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;  /* 🔹 ボタン同士の間隔を広げる */
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #218838;
+}
+
+
+/* ログアウトボタン（下部配置） */
+.logout-container {
+    margin-top: 20px;
+}
+
+.logout-button {
+    background-color: #dc3545;
+}
+
+.logout-button:hover {
+    background-color: #a71d2a;
+}
+
+/* レスポンシブ対応（スマホ用） */
+@media (max-width: 700px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+}

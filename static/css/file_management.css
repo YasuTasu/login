@@ -1,0 +1,57 @@
+.file-management-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.file-list {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.file-actions {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button { background-color: #ffc107; color: black; }
+.submit-button { background-color: #17a2b8; color: white; }
+.delete-button { background-color: #dc3545; color: white; }
+.dashboard-button { background-color: #007BFF; color: white; }
+.logout-button { background-color: #dc3545; color: white; }

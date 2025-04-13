@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザーダッシュボード</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>ユーザーダッシュボード</h2>
+        <p id="welcome-message"></p>
+
+        <div id="user-section">
+            <h3>ユーザーメニュー</h3>
+            <button class="dashboard-button" onclick="navigateTo('/file_management')">ファイル管理</button>
+            <button class="dashboard-button" onclick="navigateTo('/point_management')">ポイント管理</button>
+        </div>
+        
+
+        <div class="logout-container">
+            <button class="logout-button" onclick="logout()">ログアウト</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

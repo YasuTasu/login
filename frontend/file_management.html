@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファイル管理</title>
+    <link rel="stylesheet" href="/static/css/file_management.css">
+</head>
+<body>
+    <div class="file-management-container">
+        <!-- 左側: ファイル一覧 -->
+        <div class="file-list">
+            <h3>アップロード済みファイル</h3>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">アップロード</button>
+            <table id="fileTable">
+                <thead>
+                    <tr>
+                        <th>商品ID</th>
+                        <th>商品名</th>
+                        <th>価格</th>
+                        <th>JAN</th>
+                        <th>単位</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="fileTableBody">
+                    <tr>
+                        <td>12864</td><td>小型手提金庫 CB-050G ブルー</td><td>10,000</td><td>4977564128791</td><td>ｺ</td>
+                        <td><button onclick="selectFile('12864')">選択</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 右側: 編集・機能フィールド -->
+        <div class="file-actions">
+            <h3>ファイル操作</h3>
+            <p id="selected-file">選択中のファイル: なし</p>
+            <button class="edit-button" onclick="editFile()">編集</button>
+            <button class="submit-button" onclick="submitFile()">提出</button>
+            <button class="delete-button" onclick="deleteFile()">削除</button>
+            <div class="logout-container">
+                <button class="logout-button" onclick="navigateTo('/user_dashboard')">戻る</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/file_management.js"></script>
+</body>
+</html>
